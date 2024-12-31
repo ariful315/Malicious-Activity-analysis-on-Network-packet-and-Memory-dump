@@ -1,7 +1,7 @@
 # Malicious Activity Analysis on Network Traffic & Volatile Memory Dump
 
 ## Introduction
-This project involves a forensic analysis of network traffic and volatile memory dumps to identify malware and malicious activities. Using the Volatility framework, the investigation compares a clean memory dump with an infected sample from a Debian-based Linux system. The goal is to uncover system changes, suspicious processes, hidden modules, and malicious behaviors.
+Thi project involves a forensic analysis of network traffic and volatile memory dumps to identify malware and malicious activities. Using the Volatility framework, the investigation compares a clean memory dump with an infected sample from a Debian-based Linux system. The goal is to uncover system changes, suspicious processes, hidden modules, and malicious behaviors.
 
 ## Methodology
 1. **Clean Memory Creation**: 
