@@ -1,4 +1,23 @@
+# Malicious Activity Analysis on Network Traffic & Volatile Memory Dump
 
+## Introduction
+This project involves a forensic analysis of network traffic and volatile memory dumps to identify malware and malicious activities. Using the Volatility framework, the investigation compares a clean memory dump with an infected sample from a Debian-based Linux system. The goal is to uncover system changes, suspicious processes, hidden modules, and malicious behaviors.
+
+## Methodology
+1. **Clean Memory Creation**: 
+   - Generated using LiME (Linux Memory Extractor) on a Debian virtual machine.
+   - Created a Volatility profile for accurate analysis.
+
+2. **Analysis**:
+   - Compared processes, modules, and network connections between clean and infected memory samples.
+   - Identified irregularities, including suspicious processes (`xfce4-terminal`) and hidden modules (`lilyofthevalley`).
+
+3. **Network Analysis**:
+   - Categorized connections as localhost, local network, or public network.
+   - Discovered multiple unauthorized public network connections indicating data exfiltration.
+
+4. **Function Hooking**:
+   - Analyzed hooked system calls and file operations to detect malware persistence mechanisms.
 
 ## Key Findings
 - **Processes**: Suspicious `xfce4-terminal` process found in the infected memory sample.
